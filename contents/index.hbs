@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles/main.min.css" /> 
+</head>
+<body>
+  {{> header }}
+  <h1>{{ title }}</h1>
+  <ul>
+    {{#each pages}}
+      <li><a href="{{ url }}">{{ title }}</a></li>
+    {{/each}}
+  </ul>
+</body>
+</html>
